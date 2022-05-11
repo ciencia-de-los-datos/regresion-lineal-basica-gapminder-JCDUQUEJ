@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 
 
+
 def pregunta_01():
     """
     En este punto se realiza la lectura de conjuntos de datos.
@@ -88,6 +89,7 @@ def pregunta_02():
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
     #print(____)
     print(df['GDP'].corr(df['life']).round(4))
+    #print('{:.4f}'.format(df['GDP'].corr(df['life'])))
 
 
 def pregunta_03():
