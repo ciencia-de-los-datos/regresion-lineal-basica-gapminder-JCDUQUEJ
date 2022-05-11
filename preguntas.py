@@ -8,6 +8,8 @@ En este laboratio se construirá un modelo de regresión lineal univariado.
 import numpy as np
 import pandas as pd
 
+import warnings
+warnings.filterwarnings("ignore")
 
 def pregunta_01():
     """
