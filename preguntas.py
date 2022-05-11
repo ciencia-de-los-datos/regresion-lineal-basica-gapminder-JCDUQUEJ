@@ -8,8 +8,6 @@ En este laboratio se construirá un modelo de regresión lineal univariado.
 import numpy as np
 import pandas as pd
 
-import warnings
-warnings.filterwarnings("ignore")
 
 def pregunta_01():
     """
@@ -77,11 +75,11 @@ def pregunta_02():
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
     #print(____)
-    print('{:.4f}'.format(df['life'].corr(df['fertility'])))
+    print(df['life'].corr(df['fertility']).round(4))
 
     # Imprima la media de la columna `life` con 4 decimales.
     #print(____)
-    print('{:.4f}'.format(df['life'].mean()))
+    print(df['life'].mean().round(4))
 
     # Imprima el tipo de dato de la columna `fertility`.
     #print(____)
@@ -89,7 +87,7 @@ def pregunta_02():
     
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
     #print(____)
-    print('{:.4f}'.format(df['GDP'].corr(df['life'])))
+    print(df['GDP'].corr(df['life']).round(4))
 
 
 def pregunta_03():
